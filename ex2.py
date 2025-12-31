@@ -1,0 +1,15 @@
+import math
+print('Coordenada A')
+xa = int(input('xa= '))
+ya = int(input('ya= '))
+print('Coordenada B')
+xb = int(input('xb= '))
+yb = int(input('yb= '))
+print('Coordenada C')
+xc = int(input('xc= '))
+yc = int(input('yc= '))
+distab = math.sqrt((xb-xa)**2 + (yb-ya)**2)
+distbc = math.sqrt((xc-xb)**2 + (yc-yb)**2)
+distca = math.sqrt((xa-xc)**2 + (ya-yc)**2)
+peri = distab + distbc + distca
+print('O perímetro é ',peri)
